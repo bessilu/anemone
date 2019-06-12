@@ -1,0 +1,112 @@
+
+*{
+    margin: 0px;
+    padding 0px;
+    box-sizing: content-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Karla', sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#centralbox{
+    margin-top: auto;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    
+}
+
+#logoname{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    margin-bottom: 12px;
+    font-size: 35px;
+}
+
+.headicons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headicons div{
+    width: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.headicons img{
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.headicons p{
+    opacity: 0;
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 25px;
+    
+}
+
+#arrow{
+    margin-left: auto;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0vh;
+    opacity: 0;
+    height: 15px;
+    width: 25px
+}
+
+main{
+    display: none;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+main p{
+    text-align: justify;
+    margin-top: 50px;
+}
+
+main p a{
+  text-decoration: none;
+    color: #F79D4F;
+    line-height: 1.3;
+    cursor: pointer;
+}
+
+main p a:hover{
+    border-bottom: 2pt solid #000;
+}
+
