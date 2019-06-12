@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
 
-        $('#about,#contacts').css("cursor", "pointer").hover(function () {
-            $('#contacts').attr('href', 'contacts.html');
+        $('#about,#create').css("cursor", "pointer").hover(function () {
+            $('#create').attr('href', 'create.html');
             $('#about').attr('href','about.html');
             $(this).children('p').css(
                 "borderBottom", "2px solid #000"

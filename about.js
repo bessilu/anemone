@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
         $('#create,#contacts').css("cursor", "pointer").hover(function () {
-            $('#contacts').attr('href', 'index.html');
+            $('#contacts').attr('href', 'contacts.html');
             $('#create').attr('href','create.html');
             $(this).children('p').css(
                 "borderBottom", "2px solid #000"

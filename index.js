@@ -5,7 +5,7 @@ $(document).ready(function () {
             
             $(document.body).css("overflow-y", "auto");
             $('#main').css("display", "block");
-            $('#contacts').children('img').attr('src', 'assets/tamacoso_ico_trig.svg');
+            $('#about').children('img').attr('src', 'assets/coso_ico_trig.svg');
         }, 500);
 
         $('#centralbox').css("cursor", "default")
@@ -50,9 +50,9 @@ $(document).ready(function () {
 
         
         
-        $('#about,#create').css("cursor", "pointer").hover(function () {
+        $('#contacts,#create').css("cursor", "pointer").hover(function () {
             
-            $('#create').attr('href', 'create.html');
+            $('#contacts').attr('href', 'contacts.html');
             $('#about').attr('href','about.html');
             $(this).children('p').css(
                 "borderBottom", "2px solid #000"

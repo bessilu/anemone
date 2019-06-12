@@ -6,12 +6,12 @@
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body{
     width: 100vw;
-    overflow: hidden;
     font-family: 'Karla', sans-serif;
 }
 
@@ -25,10 +25,11 @@ header{
 
 #centralbox{
     margin-top: auto;
-    cursor: pointer;
+    cursor: default;
     margin-left: auto;
     margin-right: auto;
     min-width: 200px;
+    margin-bottom: -23vh;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -40,6 +41,7 @@ header{
 }
 
 #logoname{
+    transform: translateY(-100px);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +55,15 @@ header{
     flex-wrap: wrap;
 }
 
+.headicons a{
+    text-decoration: none;
+    color: black;
+    width: 106px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 .headicons img{
     margin-bottom: 10px;
@@ -60,7 +71,6 @@ header{
 }
 
 .headicons p{
-    opacity: 0;
     padding-bottom: 10px;
 }
 
@@ -69,13 +79,13 @@ p{
     
 }
 
-.headicons a{
-    text-decoration: none;
-    color: black;
-    width: 50px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+#create{
+    transform: translateX(-120px);
+}
+
+
+#contacts{
+    transform: translateX(120px);
 }
 
 #arrow{
@@ -83,14 +93,25 @@ p{
     padding-left: 5px;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: 0vh;
-    opacity: 0;
+    margin-bottom: 23vh;
     height: 15px;
     width: 25px
 }
 
 main{
-    display: none;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+main{
     padding-top: 100px;
     padding-bottom: 300px;
     padding-left: 15%;
@@ -118,6 +139,4 @@ main p a{
 main p a:hover{
     border-bottom: 2pt solid #000;
 }
-
-
 
