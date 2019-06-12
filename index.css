@@ -46,13 +46,6 @@ header{
     flex-wrap: wrap;
 }
 
-.headicons div{
-    width: 50px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
 .headicons img{
     margin-bottom: 10px;
@@ -67,6 +60,15 @@ header{
 p{
     font-size: 25px;
     
+}
+
+.headicons a{
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #arrow{
@@ -109,4 +111,6 @@ main p a{
 main p a:hover{
     border-bottom: 2pt solid #000;
 }
+
+
 

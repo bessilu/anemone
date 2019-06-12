@@ -1,0 +1,111 @@
+
+*{
+    margin: 0px;
+    padding 0px;
+    box-sizing: content-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    font-family: 'Karla', sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#centralbox{
+    margin-top: auto;
+    cursor: default;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    margin-bottom: -23vh;
+    
+}
+
+#logoname{
+    transform: translateY(-100px);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    margin-bottom: 12px;
+    font-size: 35px;
+}
+
+.headicons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headicons a{
+    text-decoration: none;
+    color: black;
+    width: 106px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.headicons img{
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.headicons p{
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 25px;
+    
+}
+
+#create{
+    transform: translateX(-120px);
+}
+
+
+#contacts{
+    transform: translateX(120px);
+}
+
+#arrow{
+    margin-left: auto;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 23vh;
+    height: 15px;
+    width: 25px
+}
+
+main{
+    padding-top: 100px;
+    padding-bottom: 300px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+main p{
+    text-align: justify;
+    margin-top: 50px;
+}
+

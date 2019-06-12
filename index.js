@@ -34,6 +34,7 @@ $(document).ready(function () {
         }).transition({
             opacity: 1,
         }, 500, 'in');
+        
         $('#create').children('p').transition({
             opacity: 1,
             delay: 400
@@ -47,7 +48,12 @@ $(document).ready(function () {
             delay: 400
         }, 500, 'in');
 
+        
+        
         $('#about,#create').css("cursor", "pointer").hover(function () {
+            
+            $('#create').attr('href', 'create.html');
+            $('#about').attr('href','about.html');
             $(this).children('p').css(
                 "borderBottom", "2px solid #000"
             );
