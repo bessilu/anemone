@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#centralbox').click(function () {
+    $('header').click(function () {
         setTimeout(function () {
             
             $(document.body).css("overflow-y", "auto");
@@ -8,7 +8,7 @@ $(document).ready(function () {
             $('#about').children('img').attr('src', 'assets/coso_ico_trig.svg');
         }, 500);
 
-        $('#centralbox').css("cursor", "default")
+        $('header').css("cursor", "default")
         //transition move
 
 
