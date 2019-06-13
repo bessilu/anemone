@@ -35,13 +35,13 @@ $(document).on('input change', '#slider', function () { //listen to slider chang
     $('#sliderStatus').html($(this).val());
     $("#renders").prop("src", imageUrl[v]);
 
+    var p = $(this).val();
 
-
-    if (v < 1) {
+    if (p < 1) {
         $('#tip').html('<p>This is the most gender neutral that anemone can be. You decide how to have fun with a vibrating ball!</p>');
-    } else if (v < 87 && v > 0) {
+    } else if (p < 87 && p > 0) {
         $('#tip').html('<p>These shapes are formely meant to stimulate a clitoris or small sensible spots.</p>');
-    } else if (v > 86 && v < 111) {
+    } else if (p > 86 && p < 111) {
         $('#tip').html('<p>These shapes should be adopted to stimulate transitioning clitorides, micropenises or intersexual organs of smaller dimensions.</p>');
     } else {
         $('#tip').html('<p>These more concave shapes are designed penises with larger dimensions. Find the right size!</p>');
