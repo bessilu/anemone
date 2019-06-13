@@ -9,7 +9,7 @@ $(document).ready(function () {
             $('#logoname').children('a').attr('href', 'index.html');
         }, 500);
 
-        $('header').css("cursor", "default")
+        $('header').css("cursor", "default");
         //transition move
 
 
