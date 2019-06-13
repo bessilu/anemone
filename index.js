@@ -6,6 +6,7 @@ $(document).ready(function () {
             $(document.body).css("overflow-y", "auto");
             $('#main').css("display", "block");
             $('#about').children('img').attr('src', 'assets/coso_ico_trig.svg');
+            $('#logoname').children('a').attr('href', 'index.html');
         }, 500);
 
         $('header').css("cursor", "default")
@@ -50,10 +51,11 @@ $(document).ready(function () {
 
         
         
+        
         $('#contacts,#create').css("cursor", "pointer").hover(function () {
             
             $('#contacts').attr('href', 'contacts.html');
-            $('#about').attr('href','about.html');
+            $('#create').attr('href','create.html');
             $(this).children('p').css(
                 "borderBottom", "2px solid #000"
             );

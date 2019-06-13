@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0px;
     padding 0px;
     box-sizing: content-box;
@@ -10,12 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
+    max-height: 200vh;
     width: 100vw;
     font-family: 'Karla', sans-serif;
 }
 
-header{
+header {
     min-height: 100vh;
     max-height: 100vh;
     display: flex;
@@ -23,24 +23,30 @@ header{
     align-items: center;
 }
 
-#centralbox{
+#centralbox {
     margin-top: auto;
     cursor: default;
     margin-left: auto;
     margin-right: auto;
     min-width: 200px;
     margin-bottom: -23vh;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-    
+
 }
 
-#logoname{
+#logoname {
     transform: translateY(-100px);
     text-align: center;
     margin-left: auto;
@@ -50,45 +56,50 @@ header{
     font-size: 35px;
 }
 
-.headicons{
+#logoname a {
+    text-decoration: none;
+    color: black;
+}
+
+.headicons {
     display: flex;
     flex-wrap: wrap;
 }
 
-.headicons a{
+.headicons a {
     text-decoration: none;
     color: black;
     width: 106px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
-.headicons img{
+.headicons img {
     margin-bottom: 10px;
     height: 45px;
 }
 
-.headicons p{
+.headicons p {
     padding-bottom: 10px;
 }
 
-p{
+p {
     font-size: 25px;
-    
+
 }
 
-#create{
+#create {
     transform: translateX(-120px);
 }
 
 
-#contacts{
+#contacts {
     transform: translateX(120px);
 }
 
-#arrow{
+#arrow {
     margin-left: auto;
     padding-left: 5px;
     margin-right: auto;
@@ -98,65 +109,85 @@ p{
     width: 25px
 }
 
-main{
-    padding-top: 100px;
-    padding-bottom: 300px;
+main {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
     padding-left: 15%;
     padding-right: 15%;
 }
 
-h1{
+h1 {
     font-family: 'Karla', sans-serif;
     font-size: 80px;
     font-weight: 300;
 }
 
-main p{
-    text-align: justify;
-    margin-top: 50px;
+main p {
+    text-align: left;
 }
 
-#createbox{
-    margin-top: 100px;
+#createbox {
+    margin-top: 30px;
     width: 100%;
-    height: 80vh;
-    background-color: red;
+    height: 55vh;
     display: flex;
 }
 
-#renders{
+#renders {
     width: auto;
     height: 100%;
-    
+
 }
 
 #slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  background: #000;
-  outline: none;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+    -webkit-appearance: none;
+    transform: rotate(90deg);
+    transform-origin: left;
+    width: 60vh;
+    height: 2px;
+    border-radius: 1.25px;
+    background: #000;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
 
 #slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 23px;
-  height: 24px;
-  border: 0;
-  background: url('assets/sliderthumb.svg');
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #fff;
     background-repeat: no-repeat;
-  cursor: pointer;
+    cursor: pointer;
 }
 
-#slider::-moz-range-thumb {
-  width: 23px;
-  height: 25px;
-  border: 0;
-  background: url('assets/cerchio_ico_trig.svg');
-    background-repeat: no-repeat;
-  cursor: pointer;
+#slidercontainer {
+    padding-left: 7vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    height: 100%;
+}
+
+#vertcontainer {
+    width: 100%;
+    height: 108%;
+    display: flex;
+    flex-direction: column; 
+}
+
+#tip{
+    margin-top: auto;
+}
+
+#tip p{
+    color: #EEC401;
+}
+
+#code{
+    margin-top: auto;
 }

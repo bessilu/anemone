@@ -11,6 +11,7 @@ html {
 }
 
 body{
+    height: 200vh;
     width: 100vw;
     font-family: 'Karla', sans-serif;
 }
@@ -48,6 +49,11 @@ header{
     height: 40px;
     margin-bottom: 12px;
     font-size: 35px;
+}
+
+#logoname a{
+    text-decoration: none;
+    color: black;
 }
 
 .headicons{
@@ -99,8 +105,7 @@ p{
 }
 
 main{
-    padding-top: 100px;
-    padding-bottom: 300px;
+    padding-top: 10vh;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -112,7 +117,7 @@ h1{
 }
 
 main{
-    padding-top: 100px;
+    padding-top: 10vh;
     padding-bottom: 300px;
     padding-left: 15%;
     padding-right: 15%;
