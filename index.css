@@ -136,11 +136,7 @@ h2{
     flex-direction: column;
 }
 
-#container div img{
-    margin-right: 10%;
-    margin-top: 12vh;
-    height: 21vh;
-}
+
 
 main p{
     text-align: left;

@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('header').click(function () {
         setTimeout(function () {
-            
+
             $(document.body).css("overflow-y", "auto");
             $('#main').css("display", "block");
             $('#about').children('img').attr('src', 'assets/coso_ico_trig.svg');
@@ -35,7 +35,7 @@ $(document).ready(function () {
         }).transition({
             opacity: 1,
         }, 500, 'in');
-        
+
         $('#create').children('p').transition({
             opacity: 1,
             delay: 400
@@ -49,13 +49,13 @@ $(document).ready(function () {
             delay: 400
         }, 500, 'in');
 
-        
-        
-        
+
+
+
         $('#contacts,#create').css("cursor", "pointer").hover(function () {
-            
+
             $('#contacts').attr('href', 'contacts.html');
-            $('#create').attr('href','create.html');
+            $('#create').attr('href', 'create.html');
             $(this).children('p').css(
                 "borderBottom", "2px solid #000"
             );
@@ -72,6 +72,64 @@ $(document).ready(function () {
                 "padding-bottom", "10px"
             );
         });
+
+
+        //backtonorm
+        $("#logoname").children('a').click(function () {
+            var href = $(this).attr('href');
+
+            // Delay setting the location for one second
+            setTimeout(function () {
+                window.location = href
+            }, 1000);
+            return false;
+        });
+
+
+        $("#logoname").children('a').click(function () {
+            $('header').css("cursor", "default");
+            //transition move
+
+
+            $('#logoname').transition({
+                y: 0,
+                delay: 500
+            });
+            $('#create').transition({
+                x: 0,
+                width: 50,
+                delay: 500
+            });
+            $('#about').transition({
+                width: 50,
+                delay: 500
+            });
+            $('#contacts').transition({
+                x: 0,
+                width: 50,
+                delay: 500
+            });
+            $('#centralbox').transition({
+                marginBottom: "23vh"
+            })
+            $('#arrow').transition({
+                marginBottom: "-23vh"
+            }).transition({
+                opacity: 0,
+            }, 500, 'in');
+
+            $('#create').children('p').transition({
+                opacity: 0,
+            }, 500, 'in');
+            $('#about').children('p').transition({
+                opacity: 0,
+            }, 500, 'in');
+            $('#contacts').children('p').transition({
+                opacity: 0,
+            }, 500, 'in');
+
+        });
+
     });
 
 });

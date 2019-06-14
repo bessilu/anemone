@@ -21,6 +21,62 @@ $(document).ready(function () {
         );
     });
 
+    //backtonorm
+    $("#logoname").children('a').click(function () {
+        var href = $(this).attr('href');
+
+        // Delay setting the location for one second
+        setTimeout(function () {
+            window.location = href
+        }, 1000);
+        return false;
+    });
+
+
+    $("#logoname").children('a').click(function () {
+        $('header').css("cursor", "default");
+        //transition move
+
+
+        $('#logoname').transition({
+            y: 0,
+            delay: 500
+        });
+        $('#create').transition({
+            x: 0,
+            width: 50,
+            delay: 500
+        });
+        $('#about').transition({
+            width: 50,
+            delay: 500
+        });
+        $('#contacts').transition({
+            x: 0,
+            width: 50,
+            delay: 500
+        });
+        $('#centralbox').transition({
+            marginBottom: "23vh"
+        })
+        $('#arrow').transition({
+            marginBottom: "-23vh"
+        }).transition({
+            opacity: 0,
+        }, 500, 'in');
+
+        $('#create').children('p').transition({
+            opacity: 0,
+        }, 500, 'in');
+        $('#about').children('p').transition({
+            opacity: 0,
+        }, 500, 'in');
+        $('#contacts').children('p').transition({
+            opacity: 0,
+        }, 500, 'in');
+
+    });
+
 });
 
 var imageUrl = new Array(156);
