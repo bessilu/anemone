@@ -79,11 +79,16 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+    
 var imageUrl = new Array(156);
 
 for (var i = 0; i < 156; i++) {
     imageUrl[i] = 'assets/renders/0%20(' + i + ').jpg';
 }
+    
+    
+});
 
 
 $(document).on('input change', '#slider', function () { //listen to slider changes
