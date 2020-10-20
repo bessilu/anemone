@@ -76,14 +76,14 @@ $(document).ready(function () {
         }, 500, 'in');
 
     });
-
-});
-
-$(document).ready(function () {
+    
+    
+    
 for (var i = 0; i < 156; i++) {
      $('#renders').append('<img src="assets/renders/0%20(' + i + ').jpg">');
 };
-    });
+
+});
 
 $(document).on('input change', '#slider', function () { //listen to slider changes
     var v = $(this).val(); //getting slider val
